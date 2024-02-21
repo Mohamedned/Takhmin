@@ -5,7 +5,7 @@ import PrimaryButton from "../componenten/PrimaryButton";
 function StartGameScherm() {
     return (
         <View style={styles.imputContainer}>
-            <TextInput />
+            <TextInput style={styles.numberInput} maxLength={2}/>
             <PrimaryButton>Reset</PrimaryButton>
             <PrimaryButton>Confirm</PrimaryButton>
         </View>
@@ -26,6 +26,15 @@ const styles = StyleSheet.create({
         shadowOffset: { width: 0, height: 2 }, // iOS
         shadowRadius: 6, // iOS
         shadowOpacity: 0.26, // iOS
-
+    },
+    numberInput: {
+        height: 50,
+        width: 50,
+        fontSize: 32,
+        borderBottomColor: "#ddb52f",
+        borderBottomWidth: 2,
+        color: "#ddb52f",
+        marginVertical: 8,
+        textAlign: "center",
     }
 });
